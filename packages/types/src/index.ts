@@ -1,9 +1,11 @@
-export { LogLevel } from './logger';
+export { BaseEvent, SpecialEventType } from './base-event';
 export { Client } from './client';
+export { Event } from './event';
+export { IdentifyEvent, IdentifyOperation, IdentifyUserProperties } from './identify';
 export { Identity, IdentityListener, DEFAULT_IDENTITY_INSTANCE } from './identity';
-export { Event, Payload } from './event';
+export { LogLevel } from './logger';
 export { Options } from './options';
 export { Response, ResponseBody, mapJSONToResponse, mapHttpMessageToResponse, SKIPPED_RESPONSE } from './response';
 export { RetryClass } from './retry';
 export { Status } from './status';
-export { Transport, TransportOptions } from './transport';
+export { Transport, TransportOptions, Payload } from './transport';
